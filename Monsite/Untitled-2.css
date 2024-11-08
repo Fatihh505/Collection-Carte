@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8d6be;
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 3px;
+}
+
+.explore-button {
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-left: 15px;
+    width: 150px;
+    height: auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff9900;
+    color: #fff;
+}
+
+.card-gallery {
+    display: grid; /* Active le mode grille */
+    grid-template-columns: repeat(3, ); /* 3 colonnes ajustées automatiquement */
+    gap: 10px; /* Espace de 10px entre les cartes */
+    justify-content: center; /* Centre chaque rangée horizontalement */
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px; /* Taille des cartes */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-top: 10%;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+#logo{
+    margin-right: 1650px;
+    margin-top: -50px;
+    margin-left: 15px;
+    width: 150px;
+    height: auto;
+}
+
+.explore-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.explore-button:hover {
+    background-color: #555;
+    transform: scale(1.1); /* Agrandit légèrement le bouton au survol */
+    transition: all 0.3s ease;
+}
+
+.explore-button {
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-left: 15px;
+    width: 150px;
+    height: auto;
+}
+  
+  .btn:hover .text {
+    color: white;
+  }
+  
+  .btn:hover .sparkle {
+    fill: white;
+    transform: scale(1.2);
+  } 
+
+
+
+/* Barre de recherche */ 
+.container {
+    position: relative;
+    background: linear-gradient(135deg, rgb(179, 208, 253) 0%, rgb(164, 202, 248) 100%);
+    border-radius: 1000px;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    z-index: 0;
+    max-width: 300px;
+    margin: 0 10px;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container::after, .search-container::before {
+    content: "";
+    width: 100%;
+    height: -1%;
+    border-radius: inherit;
+    position: absolute;
+  }
+  
+  .search-container::before {
+    top: -1px;
+    left: 5px;
+    background: linear-gradient(0deg, rgb(218, 232, 247) 0%, rgb(255, 255, 255) 100%);
+    z-index: -1;
+  }
+  
+  .search-container::after {
+    bottom: -1px;
+    right: -1px;
+    background: linear-gradient(0deg, rgb(163, 206, 255) 0%, rgb(211, 232, 255) 100%);
+    box-shadow: rgba(79, 156, 232, 0.7019607843) 3px 3px 5px 0px, rgba(79, 156, 232, 0.7019607843) 5px 5px 20px 0px;
+    z-index: -2;
+  }
+  
+  .input {
+    padding: 10px;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+    border: none;
+    color: #9EBCD9;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+  
+  .input:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
+  }
+  
+  .search__icon {
+    width: 50px;
+    aspect-ratio: 1;
+    border-left: 2px solid white;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 50%;
+    padding-left: 12px;
+    margin-right: 10px;
+  }
+  
+  .search__icon:hover {
+    border-left: 3px solid white;
+  }
+  
+  .search__icon path {
+    fill: white;
+  }
+
+  
+  /* Animation d entere des cartes */
+  .card {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.card-gallery {
+    display: grid; /* Active le mode grille */
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de taille égale */
+    gap: 20px; /* Espace entre les cartes */
+    padding: 20px;
+    justify-content: center; /* Centre la grille horizontalement */
+}
+
+.card {
+    background-color: #fff;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .card-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablette */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-gallery {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    }
+}
+
+/* Retourner les cartes */ 
